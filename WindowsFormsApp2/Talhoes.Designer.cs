@@ -48,6 +48,7 @@
             this.bt_cad_talhao.Size = new System.Drawing.Size(301, 241);
             this.bt_cad_talhao.TabIndex = 2;
             this.bt_cad_talhao.UseVisualStyleBackColor = false;
+            this.bt_cad_talhao.Click += new System.EventHandler(this.bt_cad_talhao_Click);
             // 
             // bt_info_talhao
             // 
@@ -81,7 +82,7 @@
             this.bt_voltar_talhao.UseVisualStyleBackColor = false;
             this.bt_voltar_talhao.Click += new System.EventHandler(this.bt_voltar_talhao_Click);
             // 
-            // Form1
+            // Talhoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,7 +91,7 @@
             this.Controls.Add(this.bt_voltar_talhao);
             this.Controls.Add(this.bt_info_talhao);
             this.Controls.Add(this.bt_cad_talhao);
-            this.Name = "Form1";
+            this.Name = "Talhoes";
             this.Text = "Form1";
             this.ResumeLayout(false);
 

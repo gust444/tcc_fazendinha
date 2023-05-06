@@ -16,5 +16,18 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_voltar_info_talhao_Click(object sender, EventArgs e)
+        {
+            Talhoes talhoes = new Talhoes();
+            this.Hide();
+            talhoes.ShowDialog();
+            this.Close();
+        }
     }
 }

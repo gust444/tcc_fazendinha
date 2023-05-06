@@ -20,6 +20,9 @@ namespace WindowsFormsApp2
         private void bt_voltar_talhao_Click(object sender, EventArgs e)
         {
             MenuPrincipal inicio = new MenuPrincipal();
+            this.Hide();
+            inicio.ShowDialog();
+            this.Close();
         }
 
         private void bt_info_talhao_Click(object sender, EventArgs e)
@@ -27,6 +30,14 @@ namespace WindowsFormsApp2
             Form3 info_talhao = new Form3();
             this.Hide();    
             info_talhao.ShowDialog();
+            this.Close();
+        }
+
+        private void bt_cad_talhao_Click(object sender, EventArgs e)
+        {
+            CadTalhoes cad_talhao = new CadTalhoes();
+            this.Hide();
+            cad_talhao.ShowDialog();
             this.Close();
         }
     }
