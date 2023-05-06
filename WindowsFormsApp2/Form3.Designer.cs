@@ -29,32 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            this.bt_voltar_talhao = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // bt_voltar_talhao
-            // 
-            this.bt_voltar_talhao.BackColor = System.Drawing.Color.Transparent;
-            this.bt_voltar_talhao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_voltar_talhao.FlatAppearance.BorderSize = 0;
-            this.bt_voltar_talhao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.bt_voltar_talhao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.bt_voltar_talhao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_voltar_talhao.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_voltar_talhao.Location = new System.Drawing.Point(173, 603);
-            this.bt_voltar_talhao.Name = "bt_voltar_talhao";
-            this.bt_voltar_talhao.Size = new System.Drawing.Size(78, 76);
-            this.bt_voltar_talhao.TabIndex = 0;
-            this.bt_voltar_talhao.UseVisualStyleBackColor = false;
-            this.bt_voltar_talhao.Click += new System.EventHandler(this.bt_voltar_talhao_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1350, 743);
-            this.Controls.Add(this.bt_voltar_talhao);
+            this.ClientSize = new System.Drawing.Size(1354, 751);
             this.Name = "Form3";
             this.Text = "Form3";
             this.ResumeLayout(false);
@@ -62,7 +44,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button bt_voltar_talhao;
     }
 }

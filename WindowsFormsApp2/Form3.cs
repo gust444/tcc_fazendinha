@@ -16,12 +16,5 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-
-        private void bt_voltar_talhao_Click(object sender, EventArgs e)
-        {
-            Form2 inicio = new Form2();
-            inicio.ShowDialog();
-            this.Close();
-        }
     }
 }

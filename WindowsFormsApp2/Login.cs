@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class Form2 : Form
+    public partial class Login : System.Windows.Forms.Form
     {
-        public Form2()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void bt_voltar_cad_talhao_Click(object sender, EventArgs e)
+        private void bt_login_Click(object sender, EventArgs e)
         {
-            Talhoes talhoes = new Talhoes();
+            MenuPrincipal entrar = new MenuPrincipal();
             this.Hide();
-            talhoes.ShowDialog();   
+            entrar.ShowDialog();
             this.Close();
+        }
+
+        private void box_senha_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

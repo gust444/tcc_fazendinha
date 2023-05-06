@@ -10,23 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class Form1 : Form
+    public partial class InfoAplicacoes : Form
     {
-        public Form1()
+        public InfoAplicacoes()
         {
             InitializeComponent();
         }
 
-        private void bt_login_Click(object sender, EventArgs e)
+        private void bt_voltar_info_aplica_Click(object sender, EventArgs e)
         {
-            Form2 entrar = new Form2();
-            entrar.ShowDialog();
+            Aplicacoes aplicacao = new Aplicacoes();
+            this.Hide();
+            aplicacao.ShowDialog();
             this.Close();
-        }
-
-        private void box_senha_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
