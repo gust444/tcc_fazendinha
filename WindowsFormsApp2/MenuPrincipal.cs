@@ -28,7 +28,10 @@ namespace WindowsFormsApp2
 
         private void bt_plantio_Click(object sender, EventArgs e)
         {
-            
+            Plantios plantio = new Plantios();
+            this.Hide();
+            plantio.ShowDialog();
+            this.Close();
 
         }
 

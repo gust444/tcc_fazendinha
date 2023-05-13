@@ -27,7 +27,7 @@ namespace WindowsFormsApp2
 
         private void bt_info_talhao_Click(object sender, EventArgs e)
         {
-            Form3 info_talhao = new Form3();
+            InfoTalhoes info_talhao = new InfoTalhoes();
             this.Hide();    
             info_talhao.ShowDialog();
             this.Close();

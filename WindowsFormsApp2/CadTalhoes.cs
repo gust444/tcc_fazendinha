@@ -24,5 +24,10 @@ namespace WindowsFormsApp2
             talhoes.ShowDialog();   
             this.Close();
         }
+
+        private void bt_cad_talhao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
