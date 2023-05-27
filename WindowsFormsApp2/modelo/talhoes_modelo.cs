@@ -8,6 +8,8 @@ namespace WindowsFormsApp2.modelo
 {
     public class talhoes_modelo
     {
+
+        private int IDTalhao;
         private string NomeTalhao;
         private string CulturaAtual;
         private string UltimaCultura;
@@ -23,50 +25,44 @@ namespace WindowsFormsApp2.modelo
             QldSolo = "";
         }
 
-        public int Codigo
+        public int id_talhao
         {
-            get { return CodigoUsuario; }
-            set { CodigoUsuario = value; }
+            get { return IDTalhao; }
+            set { IDTalhao = value; }
         }
 
-        private string nome_talhao()
+        private string nome_talhao
         {
-            return this.nomeTalhao;
+            get { return this.NomeTalhao; }
+            set { NomeTalhao = value; }
         }
         
-        private string cult_atual()
+        private string cult_atual
         {
-            return this.culturaAtual;
+            get { return this.CulturaAtual; }
+            set { this.CulturaAtual = value; }
         }
-        
-        private string cult_ultima()
-        {
-            return this.ultimaCultura;
-        }
-        
-        private string area_talhao()
-        {
-            return this.areaTalhao;
-        }
-        
-        private string qualidade_solo()
-        {
-            return this.qldSolo;
-        }
-        
-        public void setnome(string nome)
-        {
-            this.nome = nome;
 
-        }
-        public void setemail(string email)
+        private string cult_ultima
         {
-            this.email = email;
+            get { return this.UltimaCultura; }
+            set { this.UltimaCultura = value; }
         }
-        public void setfone(string fone)
+        
+        private string area_talhao
         {
-            this.fone = fone;
+            get { return this.AreaTalhao; }
+            set { this.AreaTalhao= value; }
         }
+        
+        private string qualidade_solo
+        {
+            get { return this.QldSolo; }
+            set { this.QldSolo = value; }
+        }
+        
+       
+        
     }
 }
    

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +17,13 @@ namespace WindowsFormsApp2
         public InfoTalhoes()
         {
             InitializeComponent();
+            
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            conexao conn = new conexao();   
+            tb_talhao.DataSource = conn.ObterDados("SELECT * from tb_add_talhao");
         }
 
         private void bt_voltar_info_talhao_Click(object sender, EventArgs e)
@@ -28,6 +32,12 @@ namespace WindowsFormsApp2
             this.Hide();
             talhoes.ShowDialog();
             this.Close();
+        }
+
+        
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

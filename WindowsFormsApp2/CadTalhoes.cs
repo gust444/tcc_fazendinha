@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.controller;
+using WindowsFormsApp2.modelo;
 
 namespace WindowsFormsApp2
 {
@@ -27,7 +29,15 @@ namespace WindowsFormsApp2
 
         private void bt_cad_talhao_Click(object sender, EventArgs e)
         {
+            talhoes_controle TC = new talhoes_controle();
+            talhoes_modelo TM = new talhoes_modelo();
+            TM.nome_talhao = txb_nome_t.Text;
+            TM.cult_atual = txb_culta_t.Text;
+            TM.cult_ultima = txb_cultu_t.Text;
+            TM.area_talhao = txb_area_t.Text;
+            TM.qualidade_solo = txb_qsolo_t.Text;
 
+            TC.CadTalhao(TM);
         }
     }
 }

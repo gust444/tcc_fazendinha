@@ -80,3 +80,4 @@ C:\Users\Aluno\Source\Repos\gust444\tcc_fazendinha\WindowsFormsApp2\bin\Debug\Sy
 C:\Users\Aluno\Source\Repos\gust444\tcc_fazendinha\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Aluno\Source\Repos\gust444\tcc_fazendinha\WindowsFormsApp2\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Aluno\Source\Repos\gust444\tcc_fazendinha\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\Aluno\source\repos\gust444\tcc_fazendinha\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe.config
