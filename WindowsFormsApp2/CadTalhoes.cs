@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp2.controller;
+using WindowsFormsApp2.controle;
 using WindowsFormsApp2.modelo;
 
 namespace WindowsFormsApp2

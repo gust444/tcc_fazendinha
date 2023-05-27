@@ -31,31 +31,31 @@ namespace WindowsFormsApp2.modelo
             set { IDTalhao = value; }
         }
 
-        private string nome_talhao
+        public string nome_talhao
         {
             get { return this.NomeTalhao; }
             set { NomeTalhao = value; }
         }
-        
-        private string cult_atual
+
+        public string cult_atual
         {
             get { return this.CulturaAtual; }
             set { this.CulturaAtual = value; }
         }
 
-        private string cult_ultima
+        public string cult_ultima
         {
             get { return this.UltimaCultura; }
             set { this.UltimaCultura = value; }
         }
-        
-        private string area_talhao
+
+        public string area_talhao
         {
             get { return this.AreaTalhao; }
             set { this.AreaTalhao= value; }
         }
-        
-        private string qualidade_solo
+
+        public string qualidade_solo
         {
             get { return this.QldSolo; }
             set { this.QldSolo = value; }
