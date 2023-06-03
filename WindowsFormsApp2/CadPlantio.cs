@@ -29,8 +29,7 @@ namespace WindowsFormsApp2
 
         private void bt_cad_plantio_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 plantio_controle PC = new plantio_controle();
                 plantio_modelo PM = new plantio_modelo();
                 PM.nome_talhao = txb_nomet_plantio.Text;
@@ -41,23 +40,20 @@ namespace WindowsFormsApp2
                 PM.plantas_ha = txb_qtdp_ha_plantio.Text;
                 PM.espacamento = txb_espacamento_plantio.Text;
                 PM.data_plantio = txb_data_plantio.Text;
-
-                PC.CadPlantio(PM);
-
-                plantio_controle controle_plantio = new plantio_controle();
-                if (controle_plantio.CadPlantio(PM) == true)
-                {
-                    MessageBox.Show("Cadastrado com sucesso!");
-                }
+             
+         
+            if (PC.CadPlantio(PM) == true)
+            {
+                MessageBox.Show("Cadastrado com sucesso!");
             }
-
-
-            catch (Exception ex)
+            else
             {
                 MessageBox.Show("Erro ao cadastrar!");
             }
+            
         }
-        }
+    
+    }
 }
     
 

@@ -29,8 +29,7 @@ namespace WindowsFormsApp2
 
         private void bt_confirma_cad_aplica_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 aplica_controle AC = new aplica_controle();
                 aplica_modelo AM = new aplica_modelo();
                 AM.nome_talhao = txb_nomet_aplica.Text;
@@ -40,17 +39,17 @@ namespace WindowsFormsApp2
                 AM.modo_acao = txb_modoa_aplica.Text;
                 AM.dosagem_ha = txb_doseha_aplica.Text;
                 AM.data_aplicacao = txb_data_aplica.Text;
-
-                aplica_controle Controle_aplicacao = new aplica_controle();
-                if(Controle_aplicacao.CadAplicacao(AM) == true)
-                {
+             
+            
+            if(AC.CadAplicacao(AM) == true)
+            {
                     MessageBox.Show("Cadastrado com sucesso!");
-                }
             }
-            catch (Exception ex)
+            else
             {
                 MessageBox.Show("Erro ao cadastrar!");
             }
+            
         }
     }
 }

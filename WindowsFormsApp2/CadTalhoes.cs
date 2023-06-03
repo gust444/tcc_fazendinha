@@ -29,28 +29,27 @@ namespace WindowsFormsApp2
 
         private void bt_cad_talhao_Click(object sender, EventArgs e)
         {
-            try 
-            {
-                talhoes_controle TC = new talhoes_controle();
+            
+                
                 talhoes_modelo TM = new talhoes_modelo();
                 TM.nome_talhao = txb_nome_t.Text;
                 TM.cult_atual = txb_culta_t.Text;
                 TM.cult_ultima = txb_cultu_t.Text;
                 TM.area_talhao = txb_area_t.Text;
                 TM.qualidade_solo = txb_qsolo_t.Text;
-
-                TC.CadTalhao(TM);
-
-                talhoes_controle controle_talhoes = new talhoes_controle();
-                if (controle_talhoes.CadTalhao(TM) == true)
-                {
-                    MessageBox.Show("Cadastrado com sucesso!");
-                }
-            }
-            catch (Exception ex)
+                talhoes_controle TC = new talhoes_controle();
+                
+                
+            if (TC.CadTalhao(TM) == true)
             {
-                MessageBox.Show("Erro ao cadastrar!");
+               MessageBox.Show("Cadastrado com sucesso!");
             }
+                
+            else
+            {
+               MessageBox.Show("Erro ao cadastrar!");
+            }
+           
 
         }
     }
