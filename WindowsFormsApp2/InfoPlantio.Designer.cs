@@ -32,6 +32,7 @@
             this.bt_voltar_info_plantio = new System.Windows.Forms.Button();
             this.bt_editar_plantio = new System.Windows.Forms.Button();
             this.tb_plantio = new System.Windows.Forms.DataGridView();
+            this.bt_apagar_plantio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tb_plantio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,12 +69,30 @@
             // 
             // tb_plantio
             // 
+            this.tb_plantio.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(202)))), ((int)(((byte)(11)))));
+            this.tb_plantio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_plantio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tb_plantio.Location = new System.Drawing.Point(404, 203);
+            this.tb_plantio.Location = new System.Drawing.Point(210, 160);
             this.tb_plantio.Name = "tb_plantio";
-            this.tb_plantio.Size = new System.Drawing.Size(445, 231);
+            this.tb_plantio.Size = new System.Drawing.Size(950, 450);
             this.tb_plantio.TabIndex = 11;
             this.tb_plantio.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.tb_plantio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tb_plantio_CellContentClick);
+            // 
+            // bt_apagar_plantio
+            // 
+            this.bt_apagar_plantio.BackColor = System.Drawing.Color.Transparent;
+            this.bt_apagar_plantio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_apagar_plantio.FlatAppearance.BorderSize = 0;
+            this.bt_apagar_plantio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bt_apagar_plantio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.bt_apagar_plantio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_apagar_plantio.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_apagar_plantio.Location = new System.Drawing.Point(646, 656);
+            this.bt_apagar_plantio.Name = "bt_apagar_plantio";
+            this.bt_apagar_plantio.Size = new System.Drawing.Size(73, 70);
+            this.bt_apagar_plantio.TabIndex = 12;
+            this.bt_apagar_plantio.UseVisualStyleBackColor = false;
             // 
             // InfoPlantio
             // 
@@ -81,6 +100,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1354, 751);
+            this.Controls.Add(this.bt_apagar_plantio);
             this.Controls.Add(this.tb_plantio);
             this.Controls.Add(this.bt_editar_plantio);
             this.Controls.Add(this.bt_voltar_info_plantio);
@@ -97,5 +117,6 @@
         private System.Windows.Forms.Button bt_voltar_info_plantio;
         private System.Windows.Forms.Button bt_editar_plantio;
         private System.Windows.Forms.DataGridView tb_plantio;
+        private System.Windows.Forms.Button bt_apagar_plantio;
     }
 }

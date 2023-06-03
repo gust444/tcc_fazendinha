@@ -40,7 +40,7 @@ namespace WindowsFormsApp2.controle
         {
             try
             {
-                string sql = "UPDATE tb_add_talhao (nome_talhao,cult_atual,cult_ultima,area_talhao,qualidade_solo) values (@nome_talhao,@cult_atual,@cult_ultima,@area_talhao,@qualidade_solo)";
+                string sql = "UPDATE tb_add_talhao  set nome_talhao = @nome_talhao, cult_atual = @cult_atual, area_talhao = @area_talhao, qualidade_solo = @qualidade_solo where id_talhao=@codigo";
                 string[] campos = { "@nome_talhao", "@cult_atual", "@cult_ultima", "@area_talhao", "@qualidade_solo" };
                 string[] valores = { TM.nome_talhao, TM.cult_atual, TM.cult_ultima, TM.area_talhao, TM.qualidade_solo };
                 if (com.atualizar(TM.id_talhao, campos, valores, sql) >= 1)
@@ -63,7 +63,7 @@ namespace WindowsFormsApp2.controle
         {
             try
             {
-                String SQL = "Delete from usuario where cod_usuario=@codigo";
+                String SQL = "Delete from tb_add_talhao where id_talhao=@codigo";
                 //chama o objeto conexao com o metodo apagar
                 //passando os atributos codigo e sql 
                 if (com.apagar(TM.id_talhao, SQL) == 1)
@@ -100,12 +100,13 @@ namespace WindowsFormsApp2.controle
                 if (registro.HasRows)// existe registro
                 {
                     registro.Read();// leia a informação
-                    //alterando a informação do email para o modelo usuario
-                    TM.nome_talhao = registro["nomeT"].ToString();
-                    TM.cult_atual = registro["cultA"].ToString();
-                    TM.cult_ultima = registro["cultU"].ToString();
-                    TM.area_talhao = registro["areaT"].ToString();
-                    TM.qualidade_solo = registro["qldS"].ToString();
+                                    //alterando a informação do email para o modelo usuario
+                    
+                    TM.nome_talhao = registro["nome_talhao"].ToString();
+                    TM.cult_atual = registro["cult_atual"].ToString();
+                    TM.cult_ultima = registro["cult_ultima"].ToString();
+                    TM.area_talhao = registro["area_talhao"].ToString();
+                    TM.qualidade_solo = registro["qualidade_solo"].ToString();
 
 
                 }

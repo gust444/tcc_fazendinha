@@ -15,6 +15,7 @@ namespace WindowsFormsApp2.modelo
         private string UltimaCultura;
         private string AreaTalhao;
         private string QldSolo;
+      
 
         public talhoes_modelo()
         {
@@ -22,7 +23,7 @@ namespace WindowsFormsApp2.modelo
             CulturaAtual = "";
             UltimaCultura = "";
             AreaTalhao = "";
-            QldSolo = "";
+            QldSolo = "";            
         }
 
         public int id_talhao
@@ -60,9 +61,11 @@ namespace WindowsFormsApp2.modelo
             get { return this.QldSolo; }
             set { this.QldSolo = value; }
         }
-        
-       
-        
+
+   
+
+
+
     }
 }
    

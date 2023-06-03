@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.modelo;
 
 namespace WindowsFormsApp2
 {
     public partial class Talhoes : Form
     {
+        talhoes_modelo TM = new talhoes_modelo();
         public Talhoes()
         {
             InitializeComponent();
@@ -35,7 +37,7 @@ namespace WindowsFormsApp2
 
         private void bt_cad_talhao_Click(object sender, EventArgs e)
         {
-            CadTalhoes cad_talhao = new CadTalhoes();
+            CadTalhoes cad_talhao = new CadTalhoes(TM);
             this.Hide();
             cad_talhao.ShowDialog();
             this.Close();

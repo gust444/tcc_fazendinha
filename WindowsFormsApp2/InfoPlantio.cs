@@ -36,5 +36,10 @@ namespace WindowsFormsApp2
         {
            
         }
+
+        private void tb_plantio_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

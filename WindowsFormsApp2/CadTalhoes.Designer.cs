@@ -146,6 +146,7 @@
             this.bt_salvar_talhao.Size = new System.Drawing.Size(195, 52);
             this.bt_salvar_talhao.TabIndex = 14;
             this.bt_salvar_talhao.UseVisualStyleBackColor = false;
+            this.bt_salvar_talhao.Click += new System.EventHandler(this.bt_salvar_talhao_Click);
             // 
             // CadTalhoes
             // 
@@ -164,6 +165,7 @@
             this.Controls.Add(this.bt_voltar_cad_talhao);
             this.Name = "CadTalhoes";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.CadTalhoes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
