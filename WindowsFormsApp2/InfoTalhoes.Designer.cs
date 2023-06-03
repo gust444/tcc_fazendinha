@@ -69,9 +69,9 @@
             // tb_talhao
             // 
             this.tb_talhao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tb_talhao.Location = new System.Drawing.Point(375, 222);
+            this.tb_talhao.Location = new System.Drawing.Point(209, 160);
             this.tb_talhao.Name = "tb_talhao";
-            this.tb_talhao.Size = new System.Drawing.Size(619, 257);
+            this.tb_talhao.Size = new System.Drawing.Size(950, 450);
             this.tb_talhao.TabIndex = 8;
             this.tb_talhao.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 

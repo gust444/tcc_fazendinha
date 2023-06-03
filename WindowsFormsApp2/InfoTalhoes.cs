@@ -39,24 +39,7 @@ namespace WindowsFormsApp2
         
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                //pega o ID do usuário
-                int id_talhao = Convert.ToInt32(tb_talhao.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-                MessageBox.Show("Codigo selecionado:" + id_talhao);
-                // carrega as informações na classe usuario
-                us = usu.CarregaUsuario(id_talhao);
-                //mostrar as informações no textbox
-                TXTcod.Text = codigo.ToString();
-                TXTemail.Text = us.Getemail();
-                TXTfone.Text = us.Getfone();
-                TXTnome.Text = us.GetNome();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("erro ao acessar o codigo: " + ex.Message);
-            }
+            
 
         }
     }

@@ -43,7 +43,7 @@ namespace WindowsFormsApp2.controle
                 string sql = "UPDATE tb_add_talhao (nome_talhao,cult_atual,cult_ultima,area_talhao,qualidade_solo) values (@nome_talhao,@cult_atual,@cult_ultima,@area_talhao,@qualidade_solo)";
                 string[] campos = { "@nome_talhao", "@cult_atual", "@cult_ultima", "@area_talhao", "@qualidade_solo" };
                 string[] valores = { TM.nome_talhao, TM.cult_atual, TM.cult_ultima, TM.area_talhao, TM.qualidade_solo };
-                if (com.atualizarDados(TM.id_talhao, campos, valores, sql) >= 1)
+                if (com.atualizar(TM.id_talhao, campos, valores, sql) >= 1)
                 {
                     return resultado = true;
                 }

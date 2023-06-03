@@ -95,8 +95,10 @@
   <ItemGroup>
     <Compile Include="conexao.cs" />
     <Compile Include="controle\aplica_controle.cs" />
+    <Compile Include="controle\plantio_controle.cs" />
     <Compile Include="controle\talhoes_controle.cs" />
     <Compile Include="modelo\aplica_modelo.cs" />
+    <Compile Include="modelo\plantio_modelo.cs" />
     <Compile Include="modelo\talhoes_modelo.cs" />
     <Compile Include="Plantios.cs">
       <SubType>Form</SubType>

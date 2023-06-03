@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp2.modelo
 {
-    internal class aplica_modelo
+    public class aplica_modelo
     {
         private int IDAplicacao;
+        private string Nometalhao;
         private string Defensivo;
         private string Finalidade;
         private string PrincipioAtivo;
@@ -18,6 +19,7 @@ namespace WindowsFormsApp2.modelo
 
         public aplica_modelo()
         {
+            Nometalhao = "";
             Defensivo = "";
             Finalidade = "";
             PrincipioAtivo = "";
@@ -30,6 +32,12 @@ namespace WindowsFormsApp2.modelo
         {
             get { return IDAplicacao; }
             set { IDAplicacao = value; }
+        }
+
+        public string nome_talhao
+        {
+            get { return this.Nometalhao; }
+            set { Nometalhao = value; }
         }
 
         public string defensivo

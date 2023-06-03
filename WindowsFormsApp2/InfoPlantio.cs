@@ -12,6 +12,7 @@ namespace WindowsFormsApp2
 {
     public partial class InfoPlantio : Form
     {
+        
         public InfoPlantio()
         {
             InitializeComponent();
@@ -23,6 +24,17 @@ namespace WindowsFormsApp2
             this.Hide();
             plantio.ShowDialog();
             this.Close();
+        }
+
+        private void InfoPlantio_Load(object sender, EventArgs e)
+        {
+            conexao conn = new conexao();
+            tb_plantio.DataSource = conn.ObterDados("SELECT * from tb_cad_plantio");
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
     }
 }

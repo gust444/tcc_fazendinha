@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoPlantio));
             this.bt_voltar_info_plantio = new System.Windows.Forms.Button();
             this.bt_editar_plantio = new System.Windows.Forms.Button();
+            this.tb_plantio = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_plantio)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_voltar_info_plantio
@@ -64,16 +66,28 @@
             this.bt_editar_plantio.TabIndex = 10;
             this.bt_editar_plantio.UseVisualStyleBackColor = false;
             // 
+            // tb_plantio
+            // 
+            this.tb_plantio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tb_plantio.Location = new System.Drawing.Point(404, 203);
+            this.tb_plantio.Name = "tb_plantio";
+            this.tb_plantio.Size = new System.Drawing.Size(445, 231);
+            this.tb_plantio.TabIndex = 11;
+            this.tb_plantio.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
             // InfoPlantio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1354, 751);
+            this.Controls.Add(this.tb_plantio);
             this.Controls.Add(this.bt_editar_plantio);
             this.Controls.Add(this.bt_voltar_info_plantio);
             this.Name = "InfoPlantio";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.InfoPlantio_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tb_plantio)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -82,5 +96,6 @@
 
         private System.Windows.Forms.Button bt_voltar_info_plantio;
         private System.Windows.Forms.Button bt_editar_plantio;
+        private System.Windows.Forms.DataGridView tb_plantio;
     }
 }

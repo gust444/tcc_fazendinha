@@ -89,7 +89,7 @@ namespace WindowsFormsApp2
                 throw ex;
             }
         }
-        public int atualizarDados(int codigo, string[] campos, string[] valores, string sql)
+        public int atualizar(int codigo, string[] campos, string[] valores, string sql)
         {
             int registro = -1;
             try
